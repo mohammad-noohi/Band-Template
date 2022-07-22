@@ -1,0 +1,544 @@
+/* -------------------------fonts------------------------ */
+@font-face {
+  font-family: "lato-black";
+  src: url("../fonts/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-BlackItalic";
+  src: url("../fonts/Lato-BlackItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-BoldItalic";
+  src: url("../fonts/Lato-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Italic";
+  src: url("../fonts/Lato-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url("../fonts/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-LightItalic";
+  src: url("../fonts/Lato-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-Thin";
+  src: url("../fonts/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato-ThinItalic";
+  src: url("../fonts/Lato-ThinItalic.ttf") format("truetype");
+}
+
+/* --------------------------css reset------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section,
+footer {
+  padding: 4.375rem 0;
+}
+
+/* ----------------------------body------------------------ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lato-Regular";
+  font-size: 15px;
+}
+/* ----------------------------header---------------------- */
+
+/* header-top */
+.header-top {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.navigation {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.details {
+  display: none;
+}
+
+.summary {
+  list-style-type: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  margin-right: 17px;
+}
+
+.summary:hover {
+  background-color: rgb(211, 211, 211);
+  color: #000;
+}
+
+.menu-mobile__item {
+  width: 550px;
+  margin: 0.1rem 0;
+}
+
+.menu-mobile_link {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+
+.menu-mobile_link:hover {
+  background-color: rgb(211, 211, 211);
+  color: #000;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item__link {
+  display: block;
+  padding: 1.05rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-item__link:hover {
+  background-color: rgb(211, 211, 211);
+  color: #000;
+}
+
+.fa-caret-down {
+  margin-left: 0.4rem;
+}
+
+.submenu {
+  display: none;
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  box-shadow: 0 0 5px rgb(106, 103, 103);
+}
+
+.submenu-item__link {
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 3rem 0.7rem 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.submenu-item__link:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+.search__icon {
+  color: #fff;
+  padding: 1.125rem 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__icon:hover {
+  background-color: rgb(243, 36, 36);
+}
+
+/* header-bottom */
+.header-bottom {
+  text-align: center;
+  height: 37rem;
+  background-image: url(../images/la.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.haeder__description {
+  padding: 1.5rem 0 3rem 0;
+}
+
+/* --------------------------------start main----------------------------- */
+
+/* ---------------------------------band---------------------------------- */
+
+.band {
+  text-align: center;
+}
+
+.band__title,
+.tour-title,
+.contact__title {
+  font-size: 30px;
+  letter-spacing: 4px;
+  font-weight: normal;
+}
+
+.band__subtitle,
+.tour-subtitle,
+.contact__subtitle {
+  margin: 1.7rem 0 1rem 0;
+  color: #666;
+}
+
+.description {
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.team {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member {
+  flex-basis: 10rem;
+  margin: 0 2rem;
+}
+
+.member__name {
+  margin-bottom: 1rem;
+}
+
+.member-pic {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* -------------------------------tour------------------------- */
+
+.tour {
+  background-color: rgb(0, 0, 0);
+}
+
+.tour-title {
+  text-align: center;
+  color: #fff;
+}
+
+.tour-subtitle {
+  text-align: center;
+}
+
+.monthes {
+  background-color: rgb(255, 255, 255);
+  margin: 2.5rem 0 1.8rem;
+}
+
+.month {
+  padding: 0.7rem;
+  border-bottom: 1px solid rgba(104, 102, 102, 0.4);
+  display: flex;
+}
+
+.month__sold-btn {
+  background-color: #f44336;
+  padding: 0.1rem 0.2rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.month--3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.month__number {
+  width: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.tickets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket {
+  flex-basis: 15rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.ticket__pic {
+  height: 185px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ticket__pic-1 {
+  background-image: url("../images/newyork.jpg");
+}
+
+.ticket__pic-2 {
+  background-image: url("../images/paris.jpg");
+}
+
+.ticket__pic-3 {
+  background-image: url("../images/sanfran.jpg");
+}
+
+.ticket__pic:hover {
+  background-color: #585757;
+  background-blend-mode: multiply;
+}
+
+.ticket__information {
+  padding: 1rem 0 0 1rem;
+}
+
+.ticket__date {
+  margin: 1rem 0;
+}
+
+.ticket__description {
+  margin-bottom: 1rem;
+}
+
+.ticket__buy-btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  background-color: #000;
+  color: #fff;
+  width: 7rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+/* ---------------------------------contact------------------- */
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__subtitle {
+  text-align: center;
+}
+
+.contact-us {
+  display: flex;
+  margin-top: 3rem;
+}
+
+.contact-us__information {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.city,
+.phone-number,
+.email_address {
+  padding: 0.4rem 0;
+  font-size: 17px;
+}
+
+.city i,
+.phone-number i,
+.email_address i {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.contact-us__form {
+  width: 50%;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.name-inp {
+  width: 48%;
+  padding: 0.6rem;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.email-inp {
+  width: 48%;
+  padding: 0.6rem;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.message-inp {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0 1.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.send-form-btn {
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* --------------------------------map----------------------- */
+
+.map {
+  height: 37rem;
+  background-image: url("../images/map.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(30%);
+  z-index: 1;
+}
+
+/* ---------------------------socials app-------------------- */
+
+.footer {
+  text-align: center;
+}
+
+.social-app__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-app {
+  display: block;
+  text-decoration: none;
+  color: rgb(136, 134, 134);
+  font-size: 1.4rem;
+  margin: 0 0.2rem;
+}
+
+.social-app:hover {
+  opacity: 50%;
+}
+
+.socials-app__text {
+  margin-top: 1.5rem;
+  color: rgb(136, 134, 134);
+}
+
+.socials-app__link {
+  color: rgb(136, 134, 134);
+}
+
+/* ----------------------------responsive------------------------ */
+
+@media screen and (max-width: 775px) {
+  .tickets {
+    flex-direction: column;
+  }
+
+  .ticket {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .ticket__pic {
+    height: 30rem;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .send-form-btn {
+    margin: auto;
+  }
+
+  .contact-us__information {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .contact-us__form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .menu {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .details {
+    display: flex;
+  }
+}
